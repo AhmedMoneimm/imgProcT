@@ -10,10 +10,10 @@ newWidth = int(300)
 newHeight = int(200)
 newDim = (newWidth, newHeight)
 
-smolImg1=cv2.resize(img1,newDim,interpolation=cv2.INTER_AREA)
-smolImg2=cv2.resize(img2,newDim,interpolation=cv2.INTER_AREA)
-smolImg3=cv2.resize(img3,newDim,interpolation=cv2.INTER_AREA)
-smolImg4=cv2.resize(img4,newDim,interpolation=cv2.INTER_AREA)
+smolImg1=cv2.resize(img1,newDim,cv2.INTER_AREA)
+smolImg2=cv2.resize(img2,newDim,cv2.INTER_AREA)
+smolImg3=cv2.resize(img3,newDim,cv2.INTER_AREA)
+smolImg4=cv2.resize(img4,newDim,cv2.INTER_AREA)
 
 def concat_tile(im_list_2d):
     return cv2.vconcat([cv2.hconcat(im_list_h) for im_list_h in im_list_2d])
